@@ -14,6 +14,6 @@ pcln_df = df[df['symbol'] == 'PCLN']
 # Sort by date (critical for time series)
 pcln_df = pcln_df.sort_values('date')
 
-print(df.shape)
+print(df.shape) 
 df = df.groupby([df['date'].dt.year , 'symbol']).mean()
 print(df)
